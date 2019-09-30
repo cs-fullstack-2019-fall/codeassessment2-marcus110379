@@ -14,3 +14,23 @@
 # # Update the rating from 2 to 8 from your code
 # The Grizzlies are from Memphis and are 8 in the standings.
 # ```
+class SportsTeam:
+    def __init__(self, team_name_p,team_city, team_ranking_p):
+        self.team_name_p= team_name_p
+        self.team_city= team_city
+        self.team_ranking_p=team_ranking_p
+
+    def chgRanking(self,newRanking):
+        self.team_ranking_p= newRanking
+
+
+
+    def __str__(self):
+        return f"the {self.team_name_p} from {self.team_city} are {self.team_ranking_p} in the standings"
+
+
+team1= SportsTeam(r"raiders","oakland", 2)
+
+print(team1)
+team1.chgRanking(1)
+print(team1)

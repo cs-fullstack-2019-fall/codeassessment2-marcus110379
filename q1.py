@@ -12,3 +12,17 @@
 # 1  2  7 are smaller than 9
 # 12  24  34  10 are larger than 9
 # ```
+list_of_many_numbers = [12, 24, 1, 34, 10, 2, 7]
+userinput = int(input("enter a number"))
+higherthan = -1
+lowerthan = -1
+for eachnum in list_of_many_numbers:
+    if eachnum > userinput:
+        eachnum= higherthan
+        higherthan = higherthan + userinput
+    if eachnum< userinput:
+        eachnum=lowerthan
+        lowerthan = lowerthan + userinput
+
+print(higherthan)
+print(lowerthan)

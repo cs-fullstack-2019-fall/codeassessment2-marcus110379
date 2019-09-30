@@ -20,4 +20,24 @@
 # Club Secretary: Albert
 # Club Treasurer: Bob
 # ```
+class ClubMember:
+    def __init__(self, name,role):
+        self.name = name
+        self.role =role
+
+    def __str__(self):
+        return self.name, self.role
+member1 = ClubMember("Club President", "Alfred")
+member2 = ClubMember("Club Vice President", "Troy")
+member3= ClubMember("Club Secretary", "Albert")
+member4= ClubMember("Club Treasurer", "Bob")
+
+
+memberarray= [member1,member2,member3, member4]
+
+for member in memberarray:
+    print(member.name + ":" + member.role)
+
+
+
 
